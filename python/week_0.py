@@ -19,8 +19,17 @@ print("Hello,", name, sep="")  #sep=separator - controls what goes between multi
 
 print(f"Hello, {name}")  #putting an f before quotation marks and using {} allows you to put variables or calculations directly inside your text
 
-def hello(to):
-    print("hello", to)
+def hello(to):   #def means define and it used to create custom functions and to is a parameter which is kind of like a stand in value waiting for something else to be subsituted in
+    print("Hello,", to)   #to here is still the stand in waiting for a value to be assigned to it
 
-name = input("what's your name? ")
-hello(name)
+name = input("what's your name? ")   #name is the variable and input is the function which allows the user to assign the value to the variable name
+hello(name)   #the function hello now prints whatever the user inputs as the value for the variable name.The value of the variable name is equal to the parameter to 
+
+def main():   #main function is to show that is the main part of the program I want to run and is useful when there are multiple functions in a program
+    name = input("what's your name? ")
+    hello(name)
+
+def hello(to):
+    print("Hello,", to)
+
+main()   #calls for function main and runs it, there is no error because by this point python has already seen and defined hello

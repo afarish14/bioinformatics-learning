@@ -35,3 +35,12 @@ y = float(input("what's y? "))  #automatically stores the users inout for y as a
 z = x/y
 
 print(f"{z:.2f}")  #placing an f string a colon and .2f allows the value to be rounded to two decimal places
+
+def main():   #placing a main function tells python what the main program is
+    x = int(input("what is the value of x? "))
+    print("The value of x squared is",square(x) )
+
+def square(n):   #defining the function square to create a reusable function that performs squaring
+    return n * n  # return send the value back out of the function
+
+main()
